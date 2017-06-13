@@ -1,4 +1,9 @@
-
+/*
+Status :- Solved
+Data Structure :- Multiset
+Algo :- Impementation
+Time Complexity :- Including Input (days*(n*(x)+c))
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define FOR(i, a, b, ch) for(int i=a;i<b;i+=ch)
