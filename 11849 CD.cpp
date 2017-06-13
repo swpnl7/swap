@@ -1,8 +1,4 @@
-/*
-Status : - Solved
-Data Structure: - Map
-Algorithm : - Implementation
-*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define FOR(i, a, b, ch) for(int i=a;i<b;i+=ch)
@@ -21,23 +17,25 @@ typedef  long long ll;
 int main() {
     fast;
     int n, m;
-    cin>>n>>m;
+    inp2(n, m);
     while (n && m) {
         int x, ans=0;
-        map<int, int > mii;
+        set<int > si;
+        set<int >::iterator itr;
         for (int i = 0; i <n ; ++i) {
-            cin>>x;
-            ++mii[x];
+            inp(x);
+            si.insert(x);
         }
         for (int j = 0; j <m ; ++j) {
-            cin>>x;
-            ++mii[x];
-            if(mii[x]==2){
+            inp(x);
+            itr=si.find(x);
+            if(itr!=si.end()){
+                si.erase(itr);
                 ++ans;
             }
         }
-        cout<<ans<<endl;
-        cin>>n>>m;
+        out(ans);
+        inp2(n,m);
     }
     return 0;
 }
