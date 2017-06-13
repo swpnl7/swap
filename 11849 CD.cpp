@@ -1,4 +1,8 @@
-
+/*
+Status : - Solved
+Data Structure: - Map
+Algorithm : - Implementation
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define FOR(i, a, b, ch) for(int i=a;i<b;i+=ch)
